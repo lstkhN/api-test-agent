@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","info":{"title":"Petstore","version":"1.0"},"servers":[{"url":"https://petstore3.swagger.io/api/v3"}],"paths":{"/pet/{petId}":{"get":{"operationId":"getPet","parameters":[{"name":"petId","in":"path","required":true,"schema":{"type":"integer","example":1}}],"responses":{"200":{"description":"OK"}}}}}}
