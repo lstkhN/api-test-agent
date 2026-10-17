@@ -1,8 +1,24 @@
-# API Reliability Agent
+<p align="center">
+  <img src="assets/logo.svg" alt="API Reliability Agent" width="640">
+</p>
+
+<p align="center">
+  <strong>Contract → Plan → Runtime signal</strong><br>
+  <em>Проверяйте API до того, как проблемы увидят пользователи.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/lstkhN/api-test-agent"><img src="https://img.shields.io/github/stars/lstkhN/api-test-agent?style=flat&logo=github" alt="GitHub stars"></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
+</p>
 
 Инструмент для проверки надёжности HTTP API по OpenAPI-контракту. Он превращает JSON-описание API в воспроизводимый план проверок, выполняет запросы, проверяет ответы и помогает находить регрессии между версиями контракта.
 
 Проект ориентирован на QA и CI: правила генерации тестов работают локально и не требуют LLM. LLM, обработка production-трафика и создание GitHub PR являются дополнительными возможностями.
+
+![Демонстрация запуска API Reliability Agent](assets/demo-terminal.svg)
+
+> **Почему стоит попробовать:** один JSON-контракт превращается в понятный план, исполняемые проверки и артефакт для CI — без ручного написания десятков базовых кейсов.
 
 ## Возможности
 
@@ -59,6 +75,12 @@ pytest -q
 api-agent plan openapi.json --base-url http://localhost:8000 --output plan.json
 api-agent run openapi.json --base-url http://localhost:8000 --timeout 5 --report report.json
 ```
+
+## Как выглядит результат
+
+План и отчёт остаются обычными JSON-файлами: их удобно хранить в CI, анализировать скриптами и прикладывать к ревью.
+
+![Пример машинно-читаемого отчёта](assets/report-preview.svg)
 
 ## Команды
 

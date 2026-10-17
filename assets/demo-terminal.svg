@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">API Reliability Agent terminal demo</title>
+  <desc id="desc">Terminal showing API test plan generation and passing checks</desc>
+  <rect width="1200" height="620" rx="18" fill="#0b1220"/>
+  <rect width="1200" height="54" rx="18" fill="#182338"/>
+  <circle cx="28" cy="27" r="7" fill="#fb7185"/><circle cx="52" cy="27" r="7" fill="#fbbf24"/><circle cx="76" cy="27" r="7" fill="#34d399"/>
+  <text x="108" y="34" fill="#94a3b8" font-family="SFMono-Regular,Consolas,monospace" font-size="18">api-reliability-agent — zsh</text>
+  <g font-family="SFMono-Regular,Consolas,monospace" font-size="22">
+    <text x="42" y="105" fill="#34d399">$</text><text x="68" y="105" fill="#e2e8f0">api-agent plan openapi.json --output test-plan.json</text>
+    <text x="68" y="143" fill="#94a3b8">Generated 9 cases → test-plan.json</text>
+    <text x="42" y="202" fill="#34d399">$</text><text x="68" y="202" fill="#e2e8f0">api-agent run openapi.json --report report.json</text>
+    <text x="68" y="246" fill="#34d399">PASS</text><text x="158" y="246" fill="#cbd5e1">getPet (184 ms)</text>
+    <text x="68" y="282" fill="#34d399">PASS</text><text x="158" y="282" fill="#cbd5e1">getPet unauthenticated (91 ms)</text>
+    <text x="68" y="318" fill="#34d399">PASS</text><text x="158" y="318" fill="#cbd5e1">getPet IDOR boundary (107 ms)</text>
+    <text x="68" y="362" fill="#94a3b8">Report: report.json</text>
+    <text x="42" y="428" fill="#34d399">$</text><text x="68" y="428" fill="#e2e8f0">api-agent analyze report.json</text>
+    <text x="68" y="472" fill="#fbbf24">{ "total": 9, "failed": 0, "risks": [] }</text>
+    <text x="68" y="540" fill="#64748b"># contract → plan → runtime signal</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">API Reliability Agent report preview</title>
+  <desc id="desc">Visual preview of a JSON reliability report</desc>
+  <rect width="1200" height="500" rx="18" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="64" rx="18" fill="#e2e8f0"/>
+  <circle cx="28" cy="32" r="7" fill="#fb7185"/><circle cx="52" cy="32" r="7" fill="#fbbf24"/><circle cx="76" cy="32" r="7" fill="#34d399"/>
+  <text x="108" y="39" fill="#475569" font-family="SFMono-Regular,Consolas,monospace" font-size="18">report.json</text>
+  <g font-family="SFMono-Regular,Consolas,monospace" font-size="22">
+    <text x="44" y="116" fill="#334155">{</text>
+    <text x="78" y="154" fill="#7c3aed">"total"</text><text x="190" y="154" fill="#334155">: 9,</text>
+    <text x="78" y="194" fill="#7c3aed">"passed"</text><text x="190" y="194" fill="#059669">: 9,</text>
+    <text x="78" y="234" fill="#7c3aed">"contract_drift"</text><text x="300" y="234" fill="#334155">: []</text>
+    <text x="78" y="274" fill="#7c3aed">"status"</text><text x="190" y="274" fill="#059669">: "reliable"</text>
+    <text x="44" y="314" fill="#334155">}</text>
+    <text x="620" y="146" fill="#059669" font-size="72" font-weight="700">✓</text>
+    <text x="710" y="144" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">Signal, not noise</text>
+    <text x="710" y="184" fill="#64748b" font-family="Inter,Arial,sans-serif" font-size="19">Every check leaves a machine-readable</text>
+    <text x="710" y="214" fill="#64748b" font-family="Inter,Arial,sans-serif" font-size="19">artifact for CI and risk review.</text>
+  </g>
+</svg>
